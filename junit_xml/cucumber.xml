@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="50.796">
-    <testcase classname="Account Page Feature" name="Accounts page title" time="13.626">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="55.335">
+    <testcase classname="Account Page Feature" name="Accounts page title" time="15.929">
         <system-out>
             <![CDATA[Given user has already logged in to application.............................passed
 Given user is on Accounts page..............................................passed
@@ -9,7 +9,7 @@ Then page title should be "My account - My Store"...........................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Account Page Feature" name="Accounts section count" time="9.487">
+    <testcase classname="Account Page Feature" name="Accounts section count" time="10.16">
         <system-out>
             <![CDATA[Given user has already logged in to application.............................passed
 Given user is on Accounts page..............................................passed
@@ -18,7 +18,7 @@ And accounts section count should be 6......................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login page feature" name="Login page title" time="9.545">
+    <testcase classname="Login page feature" name="Login page title" time="7.645">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When user gets the title of the page........................................passed
@@ -26,14 +26,14 @@ Then page title should be "Login - My Store"................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login page feature" name="Forgot Password link" time="8.749">
+    <testcase classname="Login page feature" name="Forgot Password link" time="10.632">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 Then forgot your password link should be displayed..........................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login page feature" name="Login with correct credentials" time="8.869">
+    <testcase classname="Login page feature" name="Login with correct credentials" time="10.139">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When user enters username "Azgharsalar@gmail.com"...........................passed
