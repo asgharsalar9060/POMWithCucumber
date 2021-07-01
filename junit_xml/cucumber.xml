@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="55.335">
-    <testcase classname="Account Page Feature" name="Accounts page title" time="15.929">
-        <system-out>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="95.273">
+    <testcase classname="Account Page Feature" name="Accounts page title" time="24.18">
+        <failure message="" type="java.lang.AssertionError">
             <![CDATA[Given user has already logged in to application.............................passed
 Given user is on Accounts page..............................................passed
 When user gets the title of the page........................................passed
-Then page title should be "My account - My Store"...........................passed
+Then page title should be "My account - My Store"...........................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.LoginPageSteps.page_title_should_be(LoginPageSteps.java:29)
+	at ✽.page title should be "My account - My Store"(file:///C:/Users/User/OneDrive/Documents/JavaTraining/POMWithCucumber/src/test/resources/features/AccountPage.feature:12)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="Account Page Feature" name="Accounts section count" time="10.16">
-        <system-out>
+    <testcase classname="Account Page Feature" name="Accounts section count" time="21.196">
+        <failure message="" type="java.lang.AssertionError">
             <![CDATA[Given user has already logged in to application.............................passed
 Given user is on Accounts page..............................................passed
-Then user gets accounts section.............................................passed
-And accounts section count should be 6......................................passed
+Then user gets accounts section.............................................failed
+And accounts section count should be 6......................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.AccountPageSteps.user_gets_accounts_section(AccountPageSteps.java:43)
+	at ✽.user gets accounts section(file:///C:/Users/User/OneDrive/Documents/JavaTraining/POMWithCucumber/src/test/resources/features/AccountPage.feature:17)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="Login page feature" name="Login page title" time="7.645">
+    <testcase classname="Login page feature" name="Login page title" time="19.725">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When user gets the title of the page........................................passed
@@ -26,14 +42,14 @@ Then page title should be "Login - My Store"................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login page feature" name="Forgot Password link" time="10.632">
+    <testcase classname="Login page feature" name="Forgot Password link" time="17.019">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 Then forgot your password link should be displayed..........................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login page feature" name="Login with correct credentials" time="10.139">
+    <testcase classname="Login page feature" name="Login with correct credentials" time="12.704">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When user enters username "Azgharsalar@gmail.com"...........................passed
